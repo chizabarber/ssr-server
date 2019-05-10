@@ -39766,7 +39766,7 @@ var Header = function Header(_ref) {
                     null,
                     _react2.default.createElement(
                         _reactRouterDom.Link,
-                        { to: '/users', className: 'black-text' },
+                        { to: '/api/users', className: 'black-text' },
                         'Users'
                     )
                 ),
@@ -39775,7 +39775,7 @@ var Header = function Header(_ref) {
                     null,
                     _react2.default.createElement(
                         _reactRouterDom.Link,
-                        { to: '/admins', className: 'black-text' },
+                        { to: '/api/admins', className: 'black-text' },
                         'Admins'
                     )
                 ),
