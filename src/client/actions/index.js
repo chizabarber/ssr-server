@@ -1,9 +1,11 @@
 // ------------------------------------------------------
+import axios from 'axios'
+// ------------------------------------------------------
 
 export const FETCH_USERS = 'FETCH_USERS'
 export const fetchUsers = () => 
     async (dispatch, getState, api) => {
-        const res = await api.get('/users')             // Note: express-http-proxy and axiosInstance (via api argument) takes care of the rest of the .get path
+        const res = await axios.get('/users')             // Note: express-http-proxy and axiosInstance (via api argument) takes care of the rest of the .get path
         dispatch({ type: FETCH_USERS, payload: res })
 }
 
