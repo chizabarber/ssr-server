@@ -1,7 +1,7 @@
 {
-  "name": "solipsystem",
+  "name": "ssr-server",
   "version": "1.0.0",
-  "description": "solipsystem server-side rendered web app",
+  "description": "",
   "main": "index.js",
   "engines": {
     "node": "12.1.0",
