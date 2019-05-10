@@ -4,6 +4,7 @@ import express from 'express'
 import { matchRoutes } from 'react-router-config'
 import proxy from 'express-http-proxy'
 // ------------------------------------------------------
+import keys from '../config/keys'
 import Routes from './client/Routes'
 import renderer from './helpers/renderer'
 import serverStore from './helpers/serverStore'
@@ -11,9 +12,9 @@ import serverStore from './helpers/serverStore'
 
 const app = express()
 
-app.use('/api', proxy('http://localhost:5000', {
+app.use('/api', proxy(keys.redirectDomain, {
     proxyReqOptDecorator (opts) {
-        opts.headers['x-forwarded-host'] = 'localhost:3000'
+        opts.headers['x-forwarded-host'] = keys.currentDomain
         return opts
     }
 }))
