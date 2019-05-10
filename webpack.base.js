@@ -1,6 +1,15 @@
 // ------------------------------------------------------
+const webpack = require('webpack')
+// ------------------------------------------------------
+const keys = require('./config/keys')
+// ------------------------------------------------------
 
 module.exports = {
+    plugins: [                                          // Done: make sure to come back to this if there are issues in production. This is for the "process is not defined error."
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(keys.environment)
+        })
+    ],
     module: {
         rules: [
             {
