@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 // ------------------------------------------------------
 
 const Header = ({ auth }) => {
-    console.log('My auth status is', auth)
     const authButton = auth ? (
         <a href='/api/logout' className='black-text'>
             Log Out
@@ -19,7 +18,8 @@ const Header = ({ auth }) => {
         <nav
             style={{
                 backgroundColor: '#fff',
-                borderTop: '3px solid #367da2'
+                borderTop: '10px solid #367da2',
+                paddingBottom: '60px'
             }}
         >
             <div className='nav-wrapper'>
@@ -31,7 +31,7 @@ const Header = ({ auth }) => {
                         marginLeft: '1%'
                     }}
                 >
-                    Chiza Barber | com
+                    CHIZA BARBER | com
                 </Link>
                 <ul className='right'>
                     <li>
