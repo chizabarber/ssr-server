@@ -17,58 +17,57 @@ const Header = ({ auth }) => {
         </a>
     )
     return (
-        <nav
-            style={{
-                backgroundColor: '#fff',
-                borderTop: '10px solid #367da2',
-                paddingBottom: '60px'
-            }}
-        >
-            <div className='nav-wrapper'>
-                <Link 
-                    to='/'
-                    className='brand-logo'
-                    style={{
-                        color: '#367da2',
-                        marginLeft: '1%',
-                        fontSize: '1.75rem'
-                    }}
-                >
-                    C B | com
-                </Link>
-                <ul className='right'>
-                    <li>{authButton}</li>
-                    <li>
-                        <Link to='/users' className='black-text'>
-                            Blog
-                        </Link>
-                    </li>
-                    <li>
-                        {/* <Link to='/admins' className='black-text'>
-                            Resume
-                        </Link> */}
-                        <a 
-                            href={Resume}
-                            target="_blank"
-                            className='black-text'
-                        >
-                            Resume
-                        </a>
-                    </li>
-                    <li>
-                        <a 
-                            href='http://www.chizabarber.dev' 
-                            style={{
-                                color: '#367da2',
-                                fontSize: '1.5rem'
-                            }}
-                        >
-                            | dev
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div className='fixed-nav'>
+            <nav
+                style={{
+                    backgroundColor: '#fff',
+                    borderTop: '10px solid #367da2',
+                    paddingBottom: '60px'
+                }}
+            >
+                <div className='nav-wrapper'>
+                    <Link 
+                        to='/'
+                        className='brand-logo'
+                        style={{
+                            color: '#367da2',
+                            marginLeft: '1%',
+                            fontSize: '1.75rem'
+                        }}
+                    >
+                        C B | com
+                    </Link>
+                    <ul className='right hide-on-small-only'>
+                        <li>{authButton}</li>
+                        <li>
+                            <Link to='/blog' className='black-text'>
+                                Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <a 
+                                href={Resume}
+                                target="_blank"
+                                className='black-text'
+                            >
+                                Resume
+                            </a>
+                        </li>
+                        <li>
+                            <a 
+                                href='http://www.chizabarber.dev' 
+                                style={{
+                                    color: '#367da2',
+                                    fontSize: '1.5rem'
+                                }}
+                            >
+                                | dev
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     )
 }
 

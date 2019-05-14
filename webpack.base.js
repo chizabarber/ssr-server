@@ -8,6 +8,9 @@ module.exports = {
     plugins: [                                          // Done: make sure to come back to this if there are issues in production. This is for the "process is not defined error."
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify(keys.environment)
+        }),
+        new webpack.DefinePlugin({
+            'process.env.BROWSER': JSON.stringify(true)
         })
     ],
     module: {
@@ -37,6 +40,10 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(sa|sc|c)ss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
             }
         ]
     }

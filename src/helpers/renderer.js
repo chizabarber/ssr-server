@@ -28,7 +28,7 @@ const renderer = (req, store, context) => {
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
                 <link rel="stylesheet" href="/styles.css">
             </head>
@@ -40,7 +40,7 @@ const renderer = (req, store, context) => {
                     }
                 </script>
                 <script src='bundle.js'></script>
-                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             </body>
         </html>
     `
