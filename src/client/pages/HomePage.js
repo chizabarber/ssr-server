@@ -22,8 +22,14 @@ class HomePage extends Component {
                 style={{ marginTop: '200px' }}
             >
                 {this.head()}
-                <h3>Welcome</h3>
-                <p>Check out these awesome features!</p>
+                <h3
+                    style={{
+                        color: '#367da2'
+                    }}
+                >
+                    Chiza Barber
+                </h3>
+                <p>Administrator | Developer</p>
             </div>
             
         )
