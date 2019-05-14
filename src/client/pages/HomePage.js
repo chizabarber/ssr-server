@@ -30,6 +30,16 @@ class HomePage extends Component {
                     Chiza Barber
                 </h3>
                 <p>Administrator | Developer</p>
+                <hr style={{
+                    width: '25%',
+                    marginTop: '30px',
+                    marginBottom: '30px'
+                }} />
+                <p>
+                    My favorite part of administration is having
+                    the opportunity to take something chaotic 
+                    and give it coherence.
+                </p>
             </div>
             
         )

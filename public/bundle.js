@@ -40208,6 +40208,16 @@ var HomePage = function (_Component) {
                     'p',
                     null,
                     'Administrator | Developer'
+                ),
+                _react2.default.createElement('hr', { style: {
+                        width: '25%',
+                        marginTop: '30px',
+                        marginBottom: '30px'
+                    } }),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'My favorite part of administration is having the opportunity to take something chaotic and give it coherence.'
                 )
             );
         }
