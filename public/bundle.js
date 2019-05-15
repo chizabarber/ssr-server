@@ -40216,7 +40216,7 @@ var HomePage = function (_Component) {
                             className: 'col s12 m12 l4',
                             style: {
                                 paddingRight: '35px',
-                                paddingBottom: '20px'
+                                paddingBottom: '40px'
                             }
                         },
                         'In my many years working in administration, I\'ve done everything from customer service to operations management, and more. Because the lines are so blurry around what an admin is and is not, I prefer to think of my role in terms of the',
@@ -40238,7 +40238,7 @@ var HomePage = function (_Component) {
                             style: {
                                 paddingLeft: '35px',
                                 paddingRight: '35px',
-                                paddingBottom: '20px'
+                                paddingBottom: '40px'
                             }
                         },
                         'The impact that I enjoy most is being able to turn',
@@ -40295,7 +40295,7 @@ var HomePage = function (_Component) {
                 _react2.default.createElement(
                     'a',
                     {
-                        href: '',
+                        href: 'https://www.linkedin.com/in/chiza-barber',
                         className: 'btn-flat',
                         style: {
                             paddingRight: '15px',
@@ -40355,11 +40355,12 @@ var HomePage = function (_Component) {
                     null,
                     'Administrator | Developer'
                 ),
-                this.renderLinks(),
                 _react2.default.createElement('hr', { style: {
                         width: '25%',
-                        marginTop: '30px'
+                        marginTop: '30px',
+                        marginBottom: '30px'
                     } }),
+                this.renderLinks(),
                 _react2.default.createElement('img', {
                     src: _skillset2.default,
                     alt: 'skillset',
@@ -40369,6 +40370,7 @@ var HomePage = function (_Component) {
                         paddingRight: '2%'
                     }
                 }),
+                '=',
                 this.renderContent(),
                 _react2.default.createElement(
                     'div',

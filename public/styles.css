@@ -3,6 +3,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     letter-spacing: .10em;
+    height: 100vh
 }
 
 /* Global styles -------------------------------- */

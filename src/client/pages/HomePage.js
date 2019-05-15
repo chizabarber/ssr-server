@@ -25,7 +25,7 @@ class HomePage extends Component {
                         className='col s12 m12 l4'
                         style={{
                             paddingRight: '35px',
-                            paddingBottom: '20px'
+                            paddingBottom: '40px'
                         }}
                     >
                         In my many years working in administration,
@@ -49,7 +49,7 @@ class HomePage extends Component {
                         style={{
                             paddingLeft: '35px',
                             paddingRight: '35px',
-                            paddingBottom: '20px'
+                            paddingBottom: '40px'
                         }}
                     >
                         The impact that I enjoy most is being able to turn
@@ -105,7 +105,7 @@ class HomePage extends Component {
         return (
             <div>
                 <a 
-                    href=''
+                    href='https://www.linkedin.com/in/chiza-barber'
                     className='btn-flat'
                     style={{
                         paddingRight: '15px',
@@ -153,11 +153,12 @@ class HomePage extends Component {
                     Chiza Barber
                 </h3>
                 <p>Administrator | Developer</p>
-                {this.renderLinks()}
                 <hr style={{
                     width: '25%',
-                    marginTop: '30px'
+                    marginTop: '30px',
+                    marginBottom: '30px'
                 }} />
+                {this.renderLinks()}
                 <img 
                     src={skillset} 
                     alt='skillset'
@@ -166,7 +167,7 @@ class HomePage extends Component {
                         marginBottom: '3%',
                         paddingRight: '2%'
                     }}
-                />
+                />=
                 {this.renderContent()}
                 <div
                     style={{
