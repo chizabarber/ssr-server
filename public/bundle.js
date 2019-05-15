@@ -40209,13 +40209,14 @@ var HomePage = function (_Component) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'row', style: { paddingBottom: '5%' } },
+                    { className: 'row' },
                     _react2.default.createElement(
                         'div',
                         {
                             className: 'col s12 m12 l4',
                             style: {
-                                paddingRight: '35px'
+                                paddingRight: '35px',
+                                paddingBottom: '20px'
                             }
                         },
                         'In my many years working in administration, I\'ve done everything from customer service to operations management, and more. Because the lines are so blurry around what an admin is and is not, I prefer to think of my role in terms of the',
@@ -40236,7 +40237,8 @@ var HomePage = function (_Component) {
                             className: 'col s12 m12 l4',
                             style: {
                                 paddingLeft: '35px',
-                                paddingRight: '35px'
+                                paddingRight: '35px',
+                                paddingBottom: '20px'
                             }
                         },
                         'The impact that I enjoy most is being able to turn',
@@ -40266,7 +40268,8 @@ var HomePage = function (_Component) {
                         {
                             className: 'col s12 m12 l4',
                             style: {
-                                paddingLeft: '35px'
+                                paddingLeft: '35px',
+                                paddingBottom: '20px'
                             }
                         },
                         'More recently, I\'ve added full-stack web development to my skillset. I see coding as a way to create',
@@ -40377,6 +40380,7 @@ var HomePage = function (_Component) {
                             backgroundColor: '#367da2',
                             height: '6%',
                             paddingTop: '1%',
+                            marginTop: '3%',
                             color: 'white'
                         }
                     },

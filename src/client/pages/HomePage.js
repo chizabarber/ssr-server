@@ -20,11 +20,12 @@ class HomePage extends Component {
     renderContent () {
         return (
             <div className='container'>
-                <div className='row' style={{ paddingBottom: '5%' }}> 
+                <div className='row'> 
                     <div 
                         className='col s12 m12 l4'
                         style={{
-                            paddingRight: '35px'
+                            paddingRight: '35px',
+                            paddingBottom: '20px'
                         }}
                     >
                         In my many years working in administration,
@@ -47,7 +48,8 @@ class HomePage extends Component {
                         className='col s12 m12 l4'
                         style={{
                             paddingLeft: '35px',
-                            paddingRight: '35px'
+                            paddingRight: '35px',
+                            paddingBottom: '20px'
                         }}
                     >
                         The impact that I enjoy most is being able to turn
@@ -76,7 +78,8 @@ class HomePage extends Component {
                     <div 
                         className='col s12 m12 l4'
                         style={{
-                            paddingLeft: '35px'
+                            paddingLeft: '35px',
+                            paddingBottom: '20px'
                         }}
                     >
                         More recently, I've added full-stack web
@@ -172,6 +175,7 @@ class HomePage extends Component {
                         backgroundColor: '#367da2',
                         height: '6%',
                         paddingTop: '1%',
+                        marginTop: '3%',
                         color: 'white'
                     }}
                 >
