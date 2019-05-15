@@ -40378,13 +40378,20 @@ var HomePage = function (_Component) {
                     {
                         style: {
                             backgroundColor: '#367da2',
-                            height: '6%',
-                            paddingTop: '1%',
+                            height: '60px',
                             marginTop: '3%',
                             color: 'white'
                         }
                     },
-                    'Copyright 2019 \xA9 Chiza Barber'
+                    _react2.default.createElement(
+                        'p',
+                        { style: {
+                                position: 'relative',
+                                top: '50%',
+                                transform: 'translateY(-50%)'
+                            } },
+                        'Copyright 2019 \xA9 Chiza Barber'
+                    )
                 )
             );
         }
