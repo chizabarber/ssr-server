@@ -20,12 +20,11 @@ class HomePage extends Component {
     renderContent () {
         return (
             <div className='container'>
-                <div className='row'>
+                <div className='row' style={{ paddingBottom: '5%' }}> 
                     <div 
                         className='col s12 m12 l4'
                         style={{
-                            paddingRight: '35px',
-                            paddingBottom: '40px'
+                            paddingRight: '35px'
                         }}
                     >
                         In my many years working in administration,
@@ -48,8 +47,7 @@ class HomePage extends Component {
                         className='col s12 m12 l4'
                         style={{
                             paddingLeft: '35px',
-                            paddingRight: '35px',
-                            paddingBottom: '40px'
+                            paddingRight: '35px'
                         }}
                     >
                         The impact that I enjoy most is being able to turn

@@ -40209,14 +40209,13 @@ var HomePage = function (_Component) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'row' },
+                    { className: 'row', style: { paddingBottom: '5%' } },
                     _react2.default.createElement(
                         'div',
                         {
                             className: 'col s12 m12 l4',
                             style: {
-                                paddingRight: '35px',
-                                paddingBottom: '40px'
+                                paddingRight: '35px'
                             }
                         },
                         'In my many years working in administration, I\'ve done everything from customer service to operations management, and more. Because the lines are so blurry around what an admin is and is not, I prefer to think of my role in terms of the',
@@ -40237,8 +40236,7 @@ var HomePage = function (_Component) {
                             className: 'col s12 m12 l4',
                             style: {
                                 paddingLeft: '35px',
-                                paddingRight: '35px',
-                                paddingBottom: '40px'
+                                paddingRight: '35px'
                             }
                         },
                         'The impact that I enjoy most is being able to turn',
