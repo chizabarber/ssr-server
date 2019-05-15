@@ -17,7 +17,7 @@ const Header = ({ auth }) => {
         </a>
     )
     return (
-        <div className='fixed-nav'>
+        <div className='navbar-fixed'>
             <nav
                 style={{
                     backgroundColor: '#fff',

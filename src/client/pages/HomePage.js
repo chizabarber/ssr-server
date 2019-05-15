@@ -2,6 +2,8 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 // ------------------------------------------------------
+import skillset from '../../images/skillset.png'
+// ------------------------------------------------------
 
 class HomePage extends Component {
     head () {
@@ -67,8 +69,8 @@ class HomePage extends Component {
                             coherence
                         </span>
                         . Historically for me, this coherence 
-                        has taken the form of clear verbal, 
-                        visual and written communication with 
+                        has taken the form of clear visual, 
+                        spoken and written communication with 
                         customers and teammates. I have a 
                         penchant for finding the right tools 
                         and processes to facilitate clarity.
@@ -113,7 +115,7 @@ class HomePage extends Component {
                     LinkedIn
                 </a>
                 <a 
-                    href=''
+                    href='https://github.com/chizabarber'
                     className='btn-flat'
                     style={{
                         paddingRight: '15px',
@@ -140,7 +142,7 @@ class HomePage extends Component {
         return (
             <div
                 className='center-align'
-                style={{ marginTop: '10%' }}
+                style={{ marginTop: '5%' }}
             >
                 {this.head()}
                 <h3
@@ -154,10 +156,28 @@ class HomePage extends Component {
                 {this.renderLinks()}
                 <hr style={{
                     width: '25%',
-                    marginTop: '30px',
-                    marginBottom: '40px'
+                    marginTop: '30px'
                 }} />
+                <img 
+                    src={skillset} 
+                    alt='skillset'
+                    style={{
+                        width: '65%',
+                        marginBottom: '3%',
+                        paddingRight: '2%'
+                    }}
+                />
                 {this.renderContent()}
+                <div
+                    style={{
+                        backgroundColor: '#367da2',
+                        height: '6%',
+                        paddingTop: '1%',
+                        color: 'white'
+                    }}
+                >
+                    Copyright 2019 © Chiza Barber
+                </div>
             </div>
         )
     }
