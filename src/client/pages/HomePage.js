@@ -173,7 +173,7 @@ class HomePage extends Component {
                 <div
                     style={{
                         backgroundColor: '#367da2',
-                        height: '60px',
+                        height: '50px',
                         marginTop: '3%',
                         color: 'white'
                     }}
