@@ -31,7 +31,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|svg|jpg|gif|pdf)$/,
+                test: /\.jpe?g$|\.ico$|\.pdf$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
                 use: [
                     {
                         loader: 'file-loader',
@@ -44,6 +44,13 @@ module.exports = {
             {
                 test: /\.(sa|sc|c)ss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.json$/,
+                loader: 'json-loader',
+                options: {
+                    name: '[name].[ext]'
+                }
             }
         ]
     }

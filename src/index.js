@@ -4,6 +4,7 @@ import express from 'express'
 import { matchRoutes } from 'react-router-config'
 import proxy from 'express-http-proxy'
 // ------------------------------------------------------
+import './images/favicon.ico'
 import keys from '../config/keys'
 import Routes from './client/Routes'
 import renderer from './helpers/renderer'

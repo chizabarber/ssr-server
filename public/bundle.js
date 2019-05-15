@@ -9425,7 +9425,7 @@ var _Routes = __webpack_require__(486);
 
 var _Routes2 = _interopRequireDefault(_Routes);
 
-var _reducers = __webpack_require__(503);
+var _reducers = __webpack_require__(504);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -39916,19 +39916,19 @@ var _HomePage = __webpack_require__(490);
 
 var _HomePage2 = _interopRequireDefault(_HomePage);
 
-var _BlogPage = __webpack_require__(498);
+var _BlogPage = __webpack_require__(499);
 
 var _BlogPage2 = _interopRequireDefault(_BlogPage);
 
-var _UsersListPage = __webpack_require__(499);
+var _UsersListPage = __webpack_require__(500);
 
 var _UsersListPage2 = _interopRequireDefault(_UsersListPage);
 
-var _AdminsListPage = __webpack_require__(500);
+var _AdminsListPage = __webpack_require__(501);
 
 var _AdminsListPage2 = _interopRequireDefault(_AdminsListPage);
 
-var _NotFoundPage = __webpack_require__(502);
+var _NotFoundPage = __webpack_require__(503);
 
 var _NotFoundPage2 = _interopRequireDefault(_NotFoundPage);
 
@@ -40158,7 +40158,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactHelmet = __webpack_require__(115);
 
-var _skillset = __webpack_require__(507);
+var _skillset = __webpack_require__(498);
 
 var _skillset2 = _interopRequireDefault(_skillset);
 
@@ -41314,6 +41314,12 @@ exports.warn = warn;
 /* 498 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "skillset.png";
+
+/***/ }),
+/* 499 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -41406,7 +41412,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 499 */
+/* 500 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41528,7 +41534,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 500 */
+/* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41546,7 +41552,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(59);
 
-var _requireAuth = __webpack_require__(501);
+var _requireAuth = __webpack_require__(502);
 
 var _requireAuth2 = _interopRequireDefault(_requireAuth);
 
@@ -41633,7 +41639,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 501 */
+/* 502 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41706,7 +41712,7 @@ exports.default = function (ChildComponent) {
 // ------------------------------------------------------
 
 /***/ }),
-/* 502 */
+/* 503 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41745,7 +41751,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 503 */
+/* 504 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41757,15 +41763,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(109);
 
-var _usersReducer = __webpack_require__(504);
+var _usersReducer = __webpack_require__(505);
 
 var _usersReducer2 = _interopRequireDefault(_usersReducer);
 
-var _authReducer = __webpack_require__(505);
+var _authReducer = __webpack_require__(506);
 
 var _authReducer2 = _interopRequireDefault(_authReducer);
 
-var _adminsReducer = __webpack_require__(506);
+var _adminsReducer = __webpack_require__(507);
 
 var _adminsReducer2 = _interopRequireDefault(_adminsReducer);
 
@@ -41785,7 +41791,7 @@ exports.default = (0, _redux.combineReducers)({
 // ------------------------------------------------------
 
 /***/ }),
-/* 504 */
+/* 505 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41810,7 +41816,7 @@ exports.default = function () {
 var _actions = __webpack_require__(53);
 
 /***/ }),
-/* 505 */
+/* 506 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41835,7 +41841,7 @@ exports.default = function () {
 var _actions = __webpack_require__(53);
 
 /***/ }),
-/* 506 */
+/* 507 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41858,12 +41864,6 @@ exports.default = function () {
 };
 
 var _actions = __webpack_require__(53);
-
-/***/ }),
-/* 507 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "skillset.png";
 
 /***/ })
 /******/ ]);
