@@ -44758,7 +44758,7 @@ var Header = function Header(_ref) {
                         _react2.default.createElement(
                             'a',
                             {
-                                href: 'http://www.chizabarber.dev',
+                                href: 'https://www.chizabarber.dev',
                                 style: {
                                     color: '#367da2',
                                     fontSize: '1.5rem'
