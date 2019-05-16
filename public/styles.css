@@ -1,9 +1,25 @@
 /* Global styles -------------------------------- */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
 body {
+    margin: 0 0 50px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: .10em;
-    height: 100vh
 }
 
-/* Global styles -------------------------------- */
+/* Footer styles -------------------------------- */
+
+.footer {
+    background-color: #367da2;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/* Footer styles -------------------------------- */

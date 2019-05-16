@@ -40162,6 +40162,10 @@ var _skillset = __webpack_require__(498);
 
 var _skillset2 = _interopRequireDefault(_skillset);
 
+var _Footer = __webpack_require__(508);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40216,7 +40220,7 @@ var HomePage = function (_Component) {
                             className: 'col s12 m12 l4',
                             style: {
                                 paddingRight: '35px',
-                                paddingBottom: '20px'
+                                paddingBottom: '50px'
                             }
                         },
                         'In my many years working in administration, I\'ve done everything from customer service to operations management, and more. Because the lines are so blurry around what an admin is and is not, I prefer to think of my role in terms of the',
@@ -40238,7 +40242,7 @@ var HomePage = function (_Component) {
                             style: {
                                 paddingLeft: '35px',
                                 paddingRight: '35px',
-                                paddingBottom: '20px'
+                                paddingBottom: '50px'
                             }
                         },
                         'The impact that I enjoy most is being able to turn',
@@ -40269,7 +40273,7 @@ var HomePage = function (_Component) {
                             className: 'col s12 m12 l4',
                             style: {
                                 paddingLeft: '35px',
-                                paddingBottom: '20px'
+                                paddingBottom: '50px'
                             }
                         },
                         'More recently, I\'ve added full-stack web development to my skillset. I see coding as a way to create',
@@ -40373,26 +40377,7 @@ var HomePage = function (_Component) {
                 }),
                 '=',
                 this.renderContent(),
-                _react2.default.createElement(
-                    'div',
-                    {
-                        style: {
-                            backgroundColor: '#367da2',
-                            height: '50px',
-                            marginTop: '3%',
-                            color: 'white'
-                        }
-                    },
-                    _react2.default.createElement(
-                        'p',
-                        { style: {
-                                position: 'relative',
-                                top: '50%',
-                                transform: 'translateY(-50%)'
-                            } },
-                        'Copyright 2019 \xA9 Chiza Barber'
-                    )
-                )
+                _react2.default.createElement(_Footer2.default, null)
             );
         }
     }]);
@@ -41864,6 +41849,42 @@ exports.default = function () {
 };
 
 var _actions = __webpack_require__(53);
+
+/***/ }),
+/* 508 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ------------------------------------------------------
+
+var Footer = function Footer() {
+    return _react2.default.createElement(
+        'div',
+        { className: 'footer' },
+        _react2.default.createElement(
+            'p',
+            null,
+            'Copyright 2019 \xA9 Chiza Barber'
+        )
+    );
+};
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+exports.default = Footer;
+// ------------------------------------------------------
 
 /***/ })
 /******/ ]);

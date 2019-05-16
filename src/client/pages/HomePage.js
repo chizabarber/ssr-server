@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 // ------------------------------------------------------
 import skillset from '../../images/skillset.png'
+import Footer from '../components/Footer'
 // ------------------------------------------------------
 
 class HomePage extends Component {
@@ -25,7 +26,7 @@ class HomePage extends Component {
                         className='col s12 m12 l4'
                         style={{
                             paddingRight: '35px',
-                            paddingBottom: '20px'
+                            paddingBottom: '50px'
                         }}
                     >
                         In my many years working in administration,
@@ -49,7 +50,7 @@ class HomePage extends Component {
                         style={{
                             paddingLeft: '35px',
                             paddingRight: '35px',
-                            paddingBottom: '20px'
+                            paddingBottom: '50px'
                         }}
                     >
                         The impact that I enjoy most is being able to turn
@@ -79,7 +80,7 @@ class HomePage extends Component {
                         className='col s12 m12 l4'
                         style={{
                             paddingLeft: '35px',
-                            paddingBottom: '20px'
+                            paddingBottom: '50px'
                         }}
                     >
                         More recently, I've added full-stack web
@@ -170,22 +171,7 @@ class HomePage extends Component {
                     }}
                 />=
                 {this.renderContent()}
-                <div
-                    style={{
-                        backgroundColor: '#367da2',
-                        height: '50px',
-                        marginTop: '3%',
-                        color: 'white'
-                    }}
-                >
-                    <p style={{
-                        position: 'relative',
-                        top: '50%',
-                        transform: 'translateY(-50%)'
-                    }}>
-                        Copyright 2019 © Chiza Barber
-                    </p>
-                </div>
+                <Footer />
             </div>
         )
     }
