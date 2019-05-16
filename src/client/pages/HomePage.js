@@ -169,7 +169,7 @@ class HomePage extends Component {
                         marginBottom: '3%',
                         paddingRight: '2%'
                     }}
-                />=
+                />
                 {this.renderContent()}
                 <Footer />
             </div>

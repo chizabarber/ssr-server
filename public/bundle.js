@@ -45027,7 +45027,6 @@ var HomePage = function (_Component) {
                         paddingRight: '2%'
                     }
                 }),
-                '=',
                 this.renderContent(),
                 _react2.default.createElement(_Footer2.default, null)
             );
