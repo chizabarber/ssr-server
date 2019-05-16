@@ -128,7 +128,7 @@ class HomePage extends Component {
                     GitHub
                 </a>
                 <a 
-                    href='mailto: chiza.barber@gmail.com'
+                    href='mailto: admin@chizabarber.com'
                     className='btn-flat'
                     style={{
                         paddingLeft: '15px',

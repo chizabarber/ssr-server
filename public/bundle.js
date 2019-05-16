@@ -44977,7 +44977,7 @@ var HomePage = function (_Component) {
                 _react2.default.createElement(
                     'a',
                     {
-                        href: 'mailto: chiza.barber@gmail.com',
+                        href: 'mailto: admin@chizabarber.com',
                         className: 'btn-flat',
                         style: {
                             paddingLeft: '15px',
