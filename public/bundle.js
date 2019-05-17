@@ -44814,6 +44814,10 @@ var _skillset = __webpack_require__(484);
 
 var _skillset2 = _interopRequireDefault(_skillset);
 
+var _Button = __webpack_require__(495);
+
+var _Button2 = _interopRequireDefault(_Button);
+
 var _Footer = __webpack_require__(485);
 
 var _Footer2 = _interopRequireDefault(_Footer);
@@ -44949,43 +44953,21 @@ var HomePage = function (_Component) {
             return _react2.default.createElement(
                 'div',
                 null,
-                _react2.default.createElement(
-                    'a',
-                    {
-                        href: 'https://www.linkedin.com/in/chiza-barber',
-                        className: 'btn-flat',
-                        style: {
-                            paddingRight: '15px',
-                            color: '#367da2'
-                        }
-                    },
-                    'LinkedIn'
-                ),
-                _react2.default.createElement(
-                    'a',
-                    {
-                        href: 'https://github.com/chizabarber',
-                        className: 'btn-flat',
-                        style: {
-                            paddingRight: '15px',
-                            paddingLeft: '15px',
-                            color: '#367da2'
-                        }
-                    },
-                    'GitHub'
-                ),
-                _react2.default.createElement(
-                    'a',
-                    {
-                        href: 'mailto: admin@chizabarber.com',
-                        className: 'btn-flat',
-                        style: {
-                            paddingLeft: '15px',
-                            color: '#367da2'
-                        }
-                    },
-                    'Email'
-                )
+                _react2.default.createElement(_Button2.default, {
+                    url: 'https://www.linkedin.com/in/chiza-barber',
+                    text: 'LinkedIn',
+                    className: 'left-button btn-flat'
+                }),
+                _react2.default.createElement(_Button2.default, {
+                    url: 'https://github.com/chizabarber',
+                    text: 'GitHub',
+                    className: 'center-button btn-flat'
+                }),
+                _react2.default.createElement(_Button2.default, {
+                    url: 'mailto: admin@chizabarber.com',
+                    text: 'Email',
+                    className: 'right-button btn-flat'
+                })
             );
         }
     }, {
@@ -46536,6 +46518,41 @@ exports.default = function () {
 };
 
 var _actions = __webpack_require__(53);
+
+/***/ }),
+/* 495 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ------------------------------------------------------
+
+var Button = function Button(props) {
+    return _react2.default.createElement(
+        'a',
+        {
+            href: props.url,
+            className: props.className
+        },
+        props.text
+    );
+};
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+exports.default = Button;
+// ------------------------------------------------------
 
 /***/ })
 /******/ ]);

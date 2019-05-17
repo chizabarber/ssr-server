@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 // ------------------------------------------------------
 import skillset from '../../images/skillset.png'
+import Button from '../components/Button'
 import Footer from '../components/Footer'
 // ------------------------------------------------------
 
@@ -106,37 +107,21 @@ class HomePage extends Component {
     renderLinks () {
         return (
             <div>
-                <a 
-                    href='https://www.linkedin.com/in/chiza-barber'
-                    className='btn-flat'
-                    style={{
-                        paddingRight: '15px',
-                        color: '#367da2'
-                    }}
-                >
-                    LinkedIn
-                </a>
-                <a 
-                    href='https://github.com/chizabarber'
-                    className='btn-flat'
-                    style={{
-                        paddingRight: '15px',
-                        paddingLeft: '15px',
-                        color: '#367da2'
-                    }}
-                >
-                    GitHub
-                </a>
-                <a 
-                    href='mailto: admin@chizabarber.com'
-                    className='btn-flat'
-                    style={{
-                        paddingLeft: '15px',
-                        color: '#367da2'
-                    }}
-                >
-                    Email
-                </a>
+                <Button
+                    url='https://www.linkedin.com/in/chiza-barber'
+                    text='LinkedIn'
+                    className='left-button btn-flat'
+                />
+                <Button 
+                    url='https://github.com/chizabarber'
+                    text='GitHub'
+                    className='center-button btn-flat'
+                />
+                <Button 
+                    url='mailto: admin@chizabarber.com'
+                    text='Email'
+                    className='right-button btn-flat'
+                />
             </div>
         )
     }

@@ -22,4 +22,20 @@ body {
     overflow: hidden;
 }
 
-/* Footer styles -------------------------------- */
+/* Button styles -------------------------------- */
+
+.left-button {
+    padding-right: 15px;
+    color: #367da2
+}
+.center-button {
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #367da2
+}
+.right-button {
+    padding-left: 15px;
+    color: #367da2
+}
+
+/* Button styles -------------------------------- */
