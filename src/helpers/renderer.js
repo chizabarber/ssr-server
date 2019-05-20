@@ -7,6 +7,7 @@ import { renderRoutes } from 'react-router-config'
 import serialize from 'serialize-javascript'
 import { Helmet } from 'react-helmet'
 // ------------------------------------------------------
+import keys from '../../config/keys'
 import Routes from '../client/Routes'
 // ------------------------------------------------------
 
@@ -28,8 +29,8 @@ const renderer = (req, store, context) => {
                 ${helmet.title.toString()}
                 ${helmet.meta.toString()}
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="shortcut icon" href="favicon.ico" />
-                <link rel="manifest" href="manifest.json">
+                <link rel="shortcut icon" href=${keys.faviconPath} />
+                <link rel="manifest" href=${keys.manifestPath}>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">

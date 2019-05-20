@@ -1,7 +1,8 @@
 // ------------------------------------------------------
 import App from './App'
 import HomePage from './pages/HomePage'
-import BlogPage from './pages/BlogPage'
+import BlogListPage from './pages/BlogListPage'
+import BlogPostPage from './pages/BlogPostPage'
 import UsersListPage from './pages/UsersListPage'
 import AdminsListPage from './pages/AdminsListPage'
 import NotFoundPage from './pages/NotFoundPage'
@@ -17,8 +18,14 @@ export default [
                 exact: true
             },
             {
-                ...BlogPage,
-                path: '/blog'
+                ...BlogListPage,
+                path: '/blog',
+                exact: true
+            },
+            {
+                ...BlogPostPage,
+                path: '/blog/:id',
+                exact: true
             },
             {
                 ...UsersListPage,

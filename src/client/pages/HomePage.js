@@ -140,12 +140,8 @@ class HomePage extends Component {
                     Chiza Barber
                 </h3>
                 <p>Administrator | Developer</p>
-                <hr style={{
-                    width: '25%',
-                    marginTop: '30px',
-                    marginBottom: '30px'
-                }} />
                 {this.renderLinks()}
+                <hr className='h-rule' />
                 <img 
                     src={skillset} 
                     alt='skillset'

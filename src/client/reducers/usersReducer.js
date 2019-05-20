@@ -1,5 +1,5 @@
 // ------------------------------------------------------
-import { FETCH_USERS } from '../actions'
+import { FETCH_USERS } from '../actions/types'
 // ------------------------------------------------------
 
 export default function (state = [], action) {

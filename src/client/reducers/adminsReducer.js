@@ -1,5 +1,5 @@
 // ------------------------------------------------------
-import { FETCH_ADMINS } from '../actions'
+import { FETCH_ADMINS } from '../actions/types'
 // ------------------------------------------------------
 
 export default function (state = [], action) {

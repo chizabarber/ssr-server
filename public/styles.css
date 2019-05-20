@@ -38,4 +38,18 @@ body {
     color: #367da2
 }
 
-/* Button styles -------------------------------- */
+/* H. Rule styles -------------------------------- */
+
+.h-rule {
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+/* Card styles -------------------------------- */
+
+.card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #367da2 !important
+}
+
+/* Card styles -------------------------------- */
