@@ -9,6 +9,12 @@ body {
     font-family: 'Nunito', sans-serif;
     letter-spacing: .10em;
 }
+a {
+    color: #367da2
+}
+blockquote {
+    border-left: 5px solid #367da2
+}
 
 /* Footer styles -------------------------------- */
 
@@ -52,4 +58,17 @@ body {
     color: #367da2 !important
 }
 
-/* Card styles -------------------------------- */
+/* Image styles -------------------------------- */
+
+.test-image {
+    height: 200px;
+    display: block;
+    margin: 30px auto 30px auto
+}
+.card-image {
+    height: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+/* Image styles -------------------------------- */

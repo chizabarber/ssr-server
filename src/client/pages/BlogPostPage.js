@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
+import ReactMarkdown from 'react-markdown/with-html'
 // ------------------------------------------------------
 import { fetchPost } from '../actions'
 import Footer from '../components/Footer'
@@ -43,8 +44,11 @@ class BlogPostPage extends Component {
                         {title}
                     </h3>
                     <hr className='h-rule' />
-                    <div className='row container'>
-                        {text}
+                    <div className='row container left-align'>
+                        <ReactMarkdown 
+                            source={text}
+                            escapeHtml={false}
+                        />
                     </div>
                     <Footer />
                 </div>

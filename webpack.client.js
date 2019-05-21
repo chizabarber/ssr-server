@@ -6,7 +6,7 @@ const baseConfig = require('./webpack.base')
 // ------------------------------------------------------
 
 const config = {
-    target: 'node',
+    target: 'web',
     entry: './src/client/hydrator.js',
     output: {
         filename: 'bundle.js',
