@@ -32,6 +32,10 @@ class BlogPostPage extends Component {
                         content={`${img}`}
                     />
                     <meta 
+                        property='og:image:width'
+                        content='200'
+                    />
+                    <meta 
                         property='og:url'
                         content={`https://www.chizabarber.com/blog/${id}`}
                     />

@@ -46136,6 +46136,10 @@ var BlogPostPage = function (_Component) {
                         content: '' + img
                     }),
                     _react2.default.createElement('meta', {
+                        property: 'og:image:width',
+                        content: '200'
+                    }),
+                    _react2.default.createElement('meta', {
                         property: 'og:url',
                         content: 'https://www.chizabarber.com/blog/' + id
                     })
