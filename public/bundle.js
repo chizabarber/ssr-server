@@ -46113,7 +46113,7 @@ var BlogPostPage = function (_Component) {
             if (post) {
                 var id = post.id,
                     title = post.title,
-                    image = post.image;
+                    img = post.img;
 
                 return _react2.default.createElement(
                     _reactHelmet.Helmet,
@@ -46133,11 +46133,11 @@ var BlogPostPage = function (_Component) {
                     }),
                     _react2.default.createElement('meta', {
                         property: 'og:image',
-                        content: '' + image
+                        content: '' + img
                     }),
                     _react2.default.createElement('meta', {
                         property: 'og:url',
-                        content: '/blog/' + id
+                        content: 'https://www.chizabarber.com/blog/' + id
                     })
                 );
             } else null;
