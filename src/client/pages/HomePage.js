@@ -118,7 +118,7 @@ class HomePage extends Component {
                     className='center-button btn-flat'
                 />
                 <Button 
-                    url='mailto: admin@chizabarber.com'
+                    url='mailto:admin@chizabarber.com'
                     text='Email'
                     className='right-button btn-flat'
                 />

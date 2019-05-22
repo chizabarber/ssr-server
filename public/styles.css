@@ -71,4 +71,12 @@ blockquote {
     margin-bottom: 10px
 }
 
-/* Image styles -------------------------------- */
+/* Blog styles -------------------------------- */
+
+.blog-subtitle {
+    color: #367da2;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+/* Blog styles -------------------------------- */

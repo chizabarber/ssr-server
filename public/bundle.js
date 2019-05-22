@@ -44833,7 +44833,7 @@ var HomePage = function (_Component) {
                     className: 'center-button btn-flat'
                 }),
                 _react2.default.createElement(_Button2.default, {
-                    url: 'mailto: admin@chizabarber.com',
+                    url: 'mailto:admin@chizabarber.com',
                     text: 'Email',
                     className: 'right-button btn-flat'
                 })
@@ -46154,7 +46154,10 @@ var BlogPostPage = function (_Component) {
                     _react2.default.createElement('hr', { className: 'h-rule' }),
                     _react2.default.createElement(
                         'div',
-                        { className: 'row container left-align' },
+                        {
+                            className: 'row container left-align',
+                            style: { marginBottom: '5%' }
+                        },
                         _react2.default.createElement(_withHtml2.default, {
                             source: text,
                             escapeHtml: false

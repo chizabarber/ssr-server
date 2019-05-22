@@ -44,7 +44,10 @@ class BlogPostPage extends Component {
                         {title}
                     </h3>
                     <hr className='h-rule' />
-                    <div className='row container left-align'>
+                    <div 
+                        className='row container left-align'
+                        style={{ marginBottom: '5%' }}
+                    >
                         <ReactMarkdown 
                             source={text}
                             escapeHtml={false}
