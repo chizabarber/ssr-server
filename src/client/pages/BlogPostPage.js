@@ -13,14 +13,27 @@ class BlogPostPage extends Component {
         this.props.fetchPost(this.props.match.params.id)
     }
     head () {
-        const { title } = this.props.post
-        if (title) {
+        const post = this.props.post
+        if (post) {
+            const { id, title, image } = post
             return (
                 <Helmet>
                     <title>{`BLOG · ${title}`}</title>
                     <meta 
+                        property='og:type'
+                        content='article'
+                    />
+                    <meta 
                         property='og:title'
                         content={`${title}`}
+                    />
+                    <meta 
+                        property='og:image'
+                        content={`${image}`}
+                    />
+                    <meta 
+                        property='og:url'
+                        content={`/blog/${id}`}
                     />
                 </Helmet>
             )

@@ -45941,7 +45941,7 @@ var BlogListPage = function (_Component) {
                                 }),
                                 _react2.default.createElement(
                                     'p',
-                                    { className: 'left-align' },
+                                    { className: 'left-align card-snippet' },
                                     snippet
                                 )
                             ),
@@ -46109,9 +46109,12 @@ var BlogPostPage = function (_Component) {
     }, {
         key: 'head',
         value: function head() {
-            var title = this.props.post.title;
+            var post = this.props.post;
+            if (post) {
+                var id = post.id,
+                    title = post.title,
+                    image = post.image;
 
-            if (title) {
                 return _react2.default.createElement(
                     _reactHelmet.Helmet,
                     null,
@@ -46121,8 +46124,20 @@ var BlogPostPage = function (_Component) {
                         'BLOG \xB7 ' + title
                     ),
                     _react2.default.createElement('meta', {
+                        property: 'og:type',
+                        content: 'article'
+                    }),
+                    _react2.default.createElement('meta', {
                         property: 'og:title',
                         content: '' + title
+                    }),
+                    _react2.default.createElement('meta', {
+                        property: 'og:image',
+                        content: '' + image
+                    }),
+                    _react2.default.createElement('meta', {
+                        property: 'og:url',
+                        content: '/blog/' + id
                     })
                 );
             } else null;

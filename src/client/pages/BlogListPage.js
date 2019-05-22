@@ -38,7 +38,7 @@ class BlogListPage extends Component {
                                     src={img} alt={title} 
                                     className='card-image'
                                 />
-                                <p className='left-align'>
+                                <p className='left-align card-snippet'>
                                     {snippet}
                                 </p>
                             </div>

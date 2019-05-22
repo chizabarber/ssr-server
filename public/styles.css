@@ -54,6 +54,11 @@ blockquote {
 
 /* Card styles -------------------------------- */
 
+.card-snippet {
+    max-height: 5%;
+    min-height: 5%;
+    overflow: hidden
+}
 .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
     color: #367da2 !important
 }
