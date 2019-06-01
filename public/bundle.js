@@ -46586,7 +46586,7 @@ var BlogListPage = function (_Component) {
         value: function renderPosts() {
             var posts = this.props.blog.posts;
             if (posts) {
-                return posts.map(function (_ref) {
+                return posts.reverse().map(function (_ref) {
                     var id = _ref.id,
                         img = _ref.img,
                         title = _ref.title,

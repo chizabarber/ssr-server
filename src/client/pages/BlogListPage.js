@@ -26,7 +26,7 @@ class BlogListPage extends Component {
     renderPosts () {
         const posts = this.props.blog.posts
         if (posts) {
-            return posts.map(({ id, img, title, snippet }) => {
+            return posts.reverse().map(({ id, img, title, snippet }) => {
                 return (
                     <div className='col s12 m6 l4' key={id}>
                         <div className='card'>
