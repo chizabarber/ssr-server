@@ -43,6 +43,10 @@ blockquote {
     padding-left: 15px;
     color: #367da2
 }
+.btn-flat:hover {
+    transition: transform 0.1s;
+    transform: scale(1.05)
+}
 
 /* H. Rule styles -------------------------------- */
 
@@ -54,6 +58,10 @@ blockquote {
 
 /* Card styles -------------------------------- */
 
+.card:hover {
+    transition: transform 0.1s;
+    transform: scale(1.025)
+}
 .card-snippet {
     max-height: 5%;
     min-height: 5%;
@@ -65,7 +73,7 @@ blockquote {
 
 /* Image styles -------------------------------- */
 
-.test-image {
+.blog-image {
     height: 200px;
     display: block;
     margin: 30px auto 30px auto
