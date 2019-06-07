@@ -50136,7 +50136,7 @@ var BlogPostPage = function (_Component) {
         value: function head() {
             var post = this.props.post;
             if (post) {
-                var id = post.id,
+                var _id = post._id,
                     title = post.title,
                     img = post.img;
 
@@ -50166,7 +50166,7 @@ var BlogPostPage = function (_Component) {
                     }),
                     _react2.default.createElement('meta', {
                         property: 'og:url',
-                        content: 'https://www.chizabarber.com/blog/' + id
+                        content: 'https://www.chizabarber.com/blog/' + _id
                     })
                 );
             } else null;
@@ -62017,7 +62017,6 @@ var AdminDash = function (_Component) {
                 }, input))
             );
         }, _this.onSubmit = function (formValues) {
-            console.log(formValues);
             _this.props.submitBlogPost(formValues);
             _this.props.history.push('/blog');
         }, _temp), _possibleConstructorReturn(_this, _ret);

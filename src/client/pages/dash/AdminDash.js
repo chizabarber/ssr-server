@@ -34,7 +34,6 @@ class AdminDash extends Component {
         )
     }
     onSubmit = (formValues) => {
-        console.log(formValues)
         this.props.submitBlogPost(formValues)
         this.props.history.push('/blog')
     }

@@ -14,7 +14,7 @@ class BlogPostPage extends Component {
     head () {
         const post = this.props.post
         if (post) {
-            const { id, title, img } = post
+            const { _id, title, img } = post
             return (
                 <Helmet>
                     <title>{`BLOG · ${title}`}</title>
@@ -36,7 +36,7 @@ class BlogPostPage extends Component {
                     />
                     <meta 
                         property='og:url'
-                        content={`https://www.chizabarber.com/blog/${id}`}
+                        content={`https://www.chizabarber.com/blog/${_id}`}
                     />
                 </Helmet>
             )
