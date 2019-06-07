@@ -4,6 +4,7 @@ import { renderRoutes } from 'react-router-config'
 // ------------------------------------------------------
 import { fetchCurrentUser } from './actions'
 import Header from './components/Header'
+import Footer from './components/Footer'
 // ------------------------------------------------------
 
 const App = ({ route }) => {
@@ -11,6 +12,7 @@ const App = ({ route }) => {
         <div>
             <Header />
             {renderRoutes(route.routes)}
+            <Footer />
         </div>
     )
 }

@@ -1,12 +1,12 @@
 // ------------------------------------------------------
-import { FETCH_BLOG_POST } from '../actions/types'
+
+const INITIAL_STATE = { id: undefined }
+
 // ------------------------------------------------------
 
-export default function (state = [], action) {
+export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
-        case FETCH_BLOG_POST:
-            return action.payload
-        default:
+        default: 
             return state
     }
 }

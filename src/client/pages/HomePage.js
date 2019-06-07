@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet'
 // ------------------------------------------------------
 import skillset from '../../images/skillset.png'
 import Button from '../components/Button'
-import Footer from '../components/Footer'
 // ------------------------------------------------------
 
 class HomePage extends Component {
@@ -152,7 +151,6 @@ class HomePage extends Component {
                     }}
                 />
                 {this.renderContent()}
-                <Footer />
             </div>
         )
     }

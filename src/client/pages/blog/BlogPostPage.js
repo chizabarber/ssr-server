@@ -4,13 +4,12 @@ import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
 import ReactMarkdown from 'react-markdown/with-html'
 // ------------------------------------------------------
-import { fetchPost } from '../actions'
-import Footer from '../components/Footer'
+import { fetchBlogPost } from '../../actions'
 // ------------------------------------------------------
 
-class BlogPostPage extends Component {
+class BlogPostPage2 extends Component {
     componentDidMount () {
-        this.props.fetchPost(this.props.match.params.id)
+        this.props.fetchBlogPost(this.props.match.params.id)
     }
     head () {
         const post = this.props.post
@@ -45,35 +44,33 @@ class BlogPostPage extends Component {
     }
     renderContent () {
         const post = this.props.post
-        if (post) {
-            const { title, text } = post
-            return (
-                <div
-                    className='center-align'
-                    style={{ marginTop: '5%' }}
+        const { title, date, content } = post
+        return (
+            <div
+                className='center-align'
+                style={{ marginTop: '5%' }}
+            >
+                {this.head()}
+                <h3
+                    style={{
+                        color: '#367da2'
+                    }}
                 >
-                    {this.head()}
-                    <h3
-                        style={{
-                            color: '#367da2'
-                        }}
-                    >
-                        {title}
-                    </h3>
-                    <hr className='h-rule' />
-                    <div 
-                        className='row container left-align'
-                        style={{ marginBottom: '5%' }}
-                    >
-                        <ReactMarkdown 
-                            source={text}
-                            escapeHtml={false}
-                        />
-                    </div>
-                    <Footer />
+                    {title}
+                </h3>
+                {date}
+                <hr className='h-rule' />
+                <div 
+                    className='row container left-align'
+                    style={{ marginBottom: '5%' }}
+                >
+                    <ReactMarkdown 
+                        source={content}
+                        escapeHtml={false}
+                    />
                 </div>
-            )
-        } else null
+            </div>
+        )
     }
     render () {
         return (
@@ -85,16 +82,16 @@ class BlogPostPage extends Component {
 }
 
 // ------------------------------------------------------
-function mapStateToProps ({ post }, ownProps) {
+function mapStateToProps ({ post }) {
     return {
-        post: post[`${ownProps.match.params.id}`]
+        post: post
     }
 }
 // ------------------------------------------------------
 export default {
-    loadData: ({ dispatch, getState }) => dispatch(fetchPost(getState().id)),
+    loadData: ({ dispatch, getState }) => dispatch(fetchBlogPost(getState().id)),
     component: connect(
-        mapStateToProps, { fetchPost }
-    )(BlogPostPage)
+        mapStateToProps, { fetchBlogPost }
+    )(BlogPostPage2)
 }
 // ------------------------------------------------------

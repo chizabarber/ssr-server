@@ -1,8 +1,9 @@
 // ------------------------------------------------------
 import App from './App'
 import HomePage from './pages/HomePage'
-import BlogListPage from './pages/BlogListPage'
-import BlogPostPage from './pages/BlogPostPage'
+import BlogListPage from './pages/blog/BlogListPage'
+import BlogPostPage from './pages/blog/BlogPostPage'
+import DashBoardPage from './pages/dash/DashboardPage'
 import NotFoundPage from './pages/NotFoundPage'
 // ------------------------------------------------------
 
@@ -23,6 +24,11 @@ export default [
             {
                 ...BlogPostPage,
                 path: '/blog/:id',
+                exact: true
+            },
+            {
+                ...DashBoardPage,
+                path: '/dashboard',
                 exact: true
             },
             {

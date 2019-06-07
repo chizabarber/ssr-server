@@ -93,4 +93,18 @@ blockquote {
     margin-bottom: 20px
 }
 
-/* Blog styles -------------------------------- */
+/* Form styles -------------------------------- */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #367da2 !important;
+    box-shadow: 0 .5px 0 0 #367da2 !important;
+}
+textarea.materialize-textarea {
+    height: 15rem
+}
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #367da2 !important;
+    box-shadow: 0 .5px 0 0 #367da2;
+}
+
+/* Form styles -------------------------------- */
