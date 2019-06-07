@@ -61782,10 +61782,6 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _keys = __webpack_require__(719);
-
-var _keys2 = _interopRequireDefault(_keys);
-
 var _requireAuth = __webpack_require__(721);
 
 var _requireAuth2 = _interopRequireDefault(_requireAuth);
@@ -61824,11 +61820,7 @@ var DashboardPage = function (_Component) {
         key: 'render',
         value: function render() {
             var auth = this.props.auth;
-            console.log('googleId: ' + auth.googleId);
-            console.log('adminID: ' + _keys2.default.adminID);
-            console.log('favicon: ' + _keys2.default.faviconPath);
-            console.log('process.env: ' + _keys2.default.environment);
-            if (auth.googleId === _keys2.default.adminID) {
+            if (auth.googleId === '104115147170088126221') {
                 return _react2.default.createElement(_AdminDash2.default, null);
             } else {
                 return _react2.default.createElement(_UserDash2.default, null);
@@ -61849,44 +61841,8 @@ exports.default = {
 };
 
 /***/ }),
-/* 719 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// ------------------------------------------------------
-
-if (false) {
-    module.exports = require('./prod');
-} else {
-    module.exports = __webpack_require__(720);
-}
-
-// ------------------------------------------------------
-
-/***/ }),
-/* 720 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// ------------------------------------------------------
-
-module.exports = { // Bug: figure out how to push a successful build with dev.js in .gitignore
-    redirectDomain: 'http://localhost:5000',
-    currentDomain: 'localhost:3000',
-    faviconPath: '',
-    manifestPath: '',
-    environment: 'development',
-    adminID: '104115147170088126221'
-
-    // ------------------------------------------------------
-
-};
-
-/***/ }),
+/* 719 */,
+/* 720 */,
 /* 721 */
 /***/ (function(module, exports, __webpack_require__) {
 

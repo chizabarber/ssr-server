@@ -1,7 +1,6 @@
 // ------------------------------------------------------
 import React, { Component } from 'react'
 // ------------------------------------------------------
-import keys from '../../../../config/keys'
 import requireAuth from '../../components/hocs/requireAuth'
 import AdminDash from './AdminDash'
 import UserDash from './UserDash'
@@ -10,11 +9,7 @@ import UserDash from './UserDash'
 class DashboardPage extends Component {
     render () {
         const auth = this.props.auth
-        console.log(`googleId: ${auth.googleId}`)
-        console.log(`adminID: ${keys.adminID}`)
-        console.log(`favicon: ${keys.faviconPath}`)
-        console.log(`process.env: ${keys.environment}`)
-        if (auth.googleId === keys.adminID) {
+        if (auth.googleId === '104115147170088126221') {
             return (
                 <AdminDash/>
             )
