@@ -70,7 +70,18 @@ class BlogListPage extends Component {
                         color: '#367da2'
                     }}
                 >
-                    | com · TEST-BLOG
+                    <span style={{ color: '#000' }}>
+                        |
+                    </span>
+                    <span style={{ marginLeft: '10px' }}>
+                        com
+                    </span>
+                    <span style={{ color: '#000', marginLeft: '10px' }}>
+                        ·
+                    </span>
+                    <span style={{ marginLeft: '10px' }}>
+                        BLOG
+                    </span>
                 </h3>
                 <hr className='h-rule' />
                 <div className='row container'>

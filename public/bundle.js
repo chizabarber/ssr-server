@@ -49987,7 +49987,26 @@ var BlogListPage = function (_Component) {
                             color: '#367da2'
                         }
                     },
-                    '| com \xB7 TEST-BLOG'
+                    _react2.default.createElement(
+                        'span',
+                        { style: { color: '#000' } },
+                        '|'
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        { style: { marginLeft: '10px' } },
+                        'com'
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        { style: { color: '#000', marginLeft: '10px' } },
+                        '\xB7'
+                    ),
+                    _react2.default.createElement(
+                        'span',
+                        { style: { marginLeft: '10px' } },
+                        'BLOG'
+                    )
                 ),
                 _react2.default.createElement('hr', { className: 'h-rule' }),
                 _react2.default.createElement(
