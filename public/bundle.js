@@ -61826,6 +61826,7 @@ var DashboardPage = function (_Component) {
             var auth = this.props.auth;
             console.log('googleId: ' + auth.googleId);
             console.log('adminID: ' + _keys2.default.adminID);
+            console.log('favicon: ' + _keys2.default.faviconPath);
             console.log('process.env: ' + _keys2.default.environment);
             if (auth.googleId === _keys2.default.adminID) {
                 return _react2.default.createElement(_AdminDash2.default, null);
