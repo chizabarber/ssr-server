@@ -5,8 +5,8 @@ module.exports = {
     currentDomain: process.env.CURRENT_DOMAIN,
     faviconPath: process.env.FAVICON_PATH,
     manifestPath: process.env.MANIFEST_PATH,
-    environment: 'production',
-    adminID: process.env.ADMIN_ID
+    adminID: process.env.ADMIN_ID,
+    environment: 'production'
 }
 
 // ------------------------------------------------------

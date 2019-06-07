@@ -12,6 +12,7 @@ class DashboardPage extends Component {
         const auth = this.props.auth
         console.log(`googleId: ${auth.googleId}`)
         console.log(`adminId: ${keys.adminID}`)
+        console.log(`process.env: ${keys.environment}`)
         if (auth.googleId === keys.adminID) {
             return (
                 <AdminDash/>
