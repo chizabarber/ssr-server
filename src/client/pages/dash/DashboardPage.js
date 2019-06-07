@@ -10,6 +10,8 @@ import UserDash from './UserDash'
 class DashboardPage extends Component {
     render () {
         const auth = this.props.auth
+        console.log(auth.googleId)
+        console.log(keys.adminID)
         if (auth.googleId === keys.adminID) {
             return (
                 <AdminDash/>
