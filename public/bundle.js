@@ -48523,6 +48523,10 @@ var _chizabarberResume = __webpack_require__(582);
 
 var _chizabarberResume2 = _interopRequireDefault(_chizabarberResume);
 
+var _BrandLogo = __webpack_require__(903);
+
+var _BrandLogo2 = _interopRequireDefault(_BrandLogo);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // ------------------------------------------------------
@@ -48555,19 +48559,7 @@ var Header = function Header(_ref) {
             _react2.default.createElement(
                 'div',
                 { className: 'nav-wrapper' },
-                _react2.default.createElement(
-                    _reactRouterDom.Link,
-                    {
-                        to: '/',
-                        className: 'brand-logo',
-                        style: {
-                            color: '#367da2',
-                            marginLeft: '1%',
-                            fontSize: '1.75rem'
-                        }
-                    },
-                    'C B | com'
-                ),
+                _react2.default.createElement(_BrandLogo2.default, null),
                 _react2.default.createElement(
                     'ul',
                     { className: 'right hide-on-small-only' },
@@ -48610,7 +48602,16 @@ var Header = function Header(_ref) {
                                     fontSize: '1.5rem'
                                 }
                             },
-                            '| dev'
+                            _react2.default.createElement(
+                                'span',
+                                { style: { color: '#000' } },
+                                '|'
+                            ),
+                            _react2.default.createElement(
+                                'span',
+                                { style: { marginLeft: '10px' } },
+                                'dev'
+                            )
                         )
                     )
                 )
@@ -48620,7 +48621,6 @@ var Header = function Header(_ref) {
 };
 
 // ------------------------------------------------------
-
 // ------------------------------------------------------
 function mapStateToProps(_ref2) {
     var auth = _ref2.auth;
@@ -48867,13 +48867,13 @@ var HomePage = function (_Component) {
                     },
                     'Chiza Barber'
                 ),
+                _react2.default.createElement('hr', { className: 'h-rule' }),
                 _react2.default.createElement(
                     'p',
                     null,
                     'Administrator | Developer'
                 ),
                 this.renderLinks(),
-                _react2.default.createElement('hr', { className: 'h-rule' }),
                 _react2.default.createElement('img', {
                     src: _skillset2.default,
                     alt: 'skillset',
@@ -70980,6 +70980,85 @@ var INITIAL_STATE = { id: undefined
     // ------------------------------------------------------
 
 };
+
+/***/ }),
+/* 902 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "Icon.png";
+
+/***/ }),
+/* 903 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(79);
+
+var _Icon = __webpack_require__(902);
+
+var _Icon2 = _interopRequireDefault(_Icon);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ------------------------------------------------------
+
+var BrandLogo = function BrandLogo() {
+    return _react2.default.createElement(
+        _reactRouterDom.Link,
+        { to: '/', className: 'brand-logo',
+            style: {
+                color: '#367da2',
+                fontSize: '1.7rem'
+            }
+        },
+        _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+                'div',
+                { className: 'col' },
+                _react2.default.createElement('img', {
+                    src: _Icon2.default, alt: 'icon',
+                    style: { width: '60px' }
+                })
+            ),
+            _react2.default.createElement(
+                'div',
+                {
+                    className: 'col',
+                    style: { marginLeft: '-15px' }
+                },
+                _react2.default.createElement(
+                    'span',
+                    { style: { color: '#000' } },
+                    '|'
+                ),
+                _react2.default.createElement(
+                    'span',
+                    { style: { marginLeft: '10px' } },
+                    'com'
+                )
+            )
+        )
+    );
+};
+
+// ------------------------------------------------------
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+exports.default = BrandLogo;
+// ------------------------------------------------------
 
 /***/ })
 /******/ ]);

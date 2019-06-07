@@ -138,9 +138,9 @@ class HomePage extends Component {
                 >
                     Chiza Barber
                 </h3>
+                <hr className='h-rule' />
                 <p>Administrator | Developer</p>
                 {this.renderLinks()}
-                <hr className='h-rule' />
                 <img 
                     src={skillset} 
                     alt='skillset'

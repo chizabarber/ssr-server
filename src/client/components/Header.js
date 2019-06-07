@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 // ------------------------------------------------------
 import Resume from '../../documents/chizabarber-resume.pdf'
+import BrandLogo from './BrandLogo'
 // ------------------------------------------------------
 
 const Header = ({ auth }) => {
@@ -26,17 +27,7 @@ const Header = ({ auth }) => {
                 }}
             >
                 <div className='nav-wrapper'>
-                    <Link 
-                        to='/'
-                        className='brand-logo'
-                        style={{
-                            color: '#367da2',
-                            marginLeft: '1%',
-                            fontSize: '1.75rem'
-                        }}
-                    >
-                        C B | com
-                    </Link>
+                    <BrandLogo />
                     <ul className='right hide-on-small-only'>
                         <li>{authButton}</li>
                         <li>
@@ -61,7 +52,12 @@ const Header = ({ auth }) => {
                                     fontSize: '1.5rem'
                                 }}
                             >
-                                | dev
+                                <span style={{ color: '#000' }}>
+                                |
+                                </span>
+                                <span style={{ marginLeft: '10px' }}>
+                                    dev
+                                </span>
                             </a>
                         </li>
                     </ul>
