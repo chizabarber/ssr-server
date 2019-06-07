@@ -1,9 +1,7 @@
 // ------------------------------------------------------
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
 // ------------------------------------------------------
-import keys from '../../config/keys'
-import { logValues } from '../../actions'
+import keys from '../../../../config/keys'
 import requireAuth from '../../components/hocs/requireAuth'
 import AdminDash from './AdminDash'
 import UserDash from './UserDash'

@@ -5,7 +5,8 @@ module.exports = {                                      // Bug: figure out how t
     currentDomain: 'localhost:3000',
     faviconPath: '',
     manifestPath: '',
-    environment: 'development'
+    environment: 'development',
+    adminID: '104115147170088126221'
 }
 
 // ------------------------------------------------------

@@ -61423,13 +61423,9 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRedux = __webpack_require__(16);
-
-var _keys = __webpack_require__(721);
+var _keys = __webpack_require__(908);
 
 var _keys2 = _interopRequireDefault(_keys);
-
-var _actions = __webpack_require__(61);
 
 var _requireAuth = __webpack_require__(724);
 
@@ -61490,81 +61486,9 @@ exports.default = {
 };
 
 /***/ }),
-/* 721 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _prod = __webpack_require__(722);
-
-var _prod2 = _interopRequireDefault(_prod);
-
-var _dev = __webpack_require__(723);
-
-var _dev2 = _interopRequireDefault(_dev);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// ------------------------------------------------------
-
-// ------------------------------------------------------
-var keys = void 0;
-
-if (false) {
-    keys = _prod2.default;
-} else {
-    keys = _dev2.default;
-}
-
-// ------------------------------------------------------
-exports.default = keys;
-// ------------------------------------------------------
-
-/***/ }),
-/* 722 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-// ------------------------------------------------------
-
-var prod = {
-    adminID: process.env.ADMIN_ID
-
-    // ------------------------------------------------------
-};exports.default = prod;
-// ------------------------------------------------------
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(106)))
-
-/***/ }),
-/* 723 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-// ------------------------------------------------------
-
-var dev = {
-    adminID: '104115147170088126221'
-
-    // ------------------------------------------------------
-};exports.default = dev;
-// ------------------------------------------------------
-
-/***/ }),
+/* 721 */,
+/* 722 */,
+/* 723 */,
 /* 724 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -71047,6 +70971,44 @@ exports.default = {
         return dispatch((0, _actions.fetchBlogPost)(getState().id));
     },
     component: (0, _reactRedux.connect)(mapStateToProps, { fetchBlogPost: _actions.fetchBlogPost })(BlogPostPage)
+    // ------------------------------------------------------
+
+};
+
+/***/ }),
+/* 908 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// ------------------------------------------------------
+
+if (false) {
+    module.exports = require('./prod');
+} else {
+    module.exports = __webpack_require__(909);
+}
+
+// ------------------------------------------------------
+
+/***/ }),
+/* 909 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// ------------------------------------------------------
+
+module.exports = { // Bug: figure out how to push a successful build with dev.js in .gitignore
+    redirectDomain: 'http://localhost:5000',
+    currentDomain: 'localhost:3000',
+    faviconPath: '',
+    manifestPath: '',
+    environment: 'development',
+    adminID: '104115147170088126221'
+
     // ------------------------------------------------------
 
 };
