@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown/with-html'
 import { fetchBlogPost } from '../../actions'
 // ------------------------------------------------------
 
-class BlogPostPage2 extends Component {
+class BlogPostPage extends Component {
     componentDidMount () {
         this.props.fetchBlogPost(this.props.match.params.id)
     }
@@ -92,6 +92,6 @@ export default {
     loadData: ({ dispatch, getState }) => dispatch(fetchBlogPost(getState().id)),
     component: connect(
         mapStateToProps, { fetchBlogPost }
-    )(BlogPostPage2)
+    )(BlogPostPage)
 }
 // ------------------------------------------------------

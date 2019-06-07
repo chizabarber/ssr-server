@@ -70744,16 +70744,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // ------------------------------------------------------
 
-var BlogListPage2 = function (_Component) {
-    _inherits(BlogListPage2, _Component);
+var BlogListPage = function (_Component) {
+    _inherits(BlogListPage, _Component);
 
-    function BlogListPage2() {
-        _classCallCheck(this, BlogListPage2);
+    function BlogListPage() {
+        _classCallCheck(this, BlogListPage);
 
-        return _possibleConstructorReturn(this, (BlogListPage2.__proto__ || Object.getPrototypeOf(BlogListPage2)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (BlogListPage.__proto__ || Object.getPrototypeOf(BlogListPage)).apply(this, arguments));
     }
 
-    _createClass(BlogListPage2, [{
+    _createClass(BlogListPage, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.props.fetchBlogPosts();
@@ -70860,7 +70860,7 @@ var BlogListPage2 = function (_Component) {
         }
     }]);
 
-    return BlogListPage2;
+    return BlogListPage;
 }(_react.Component);
 
 // ------------------------------------------------------
@@ -70877,7 +70877,7 @@ exports.default = {
         var dispatch = _ref3.dispatch;
         return dispatch((0, _actions.fetchBlogPosts)());
     },
-    component: (0, _reactRedux.connect)(mapStateToProps, { fetchBlogPosts: _actions.fetchBlogPosts })(BlogListPage2)
+    component: (0, _reactRedux.connect)(mapStateToProps, { fetchBlogPosts: _actions.fetchBlogPosts })(BlogListPage)
     // ------------------------------------------------------
 
 };
@@ -70922,16 +70922,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 // ------------------------------------------------------
 
-var BlogPostPage2 = function (_Component) {
-    _inherits(BlogPostPage2, _Component);
+var BlogPostPage = function (_Component) {
+    _inherits(BlogPostPage, _Component);
 
-    function BlogPostPage2() {
-        _classCallCheck(this, BlogPostPage2);
+    function BlogPostPage() {
+        _classCallCheck(this, BlogPostPage);
 
-        return _possibleConstructorReturn(this, (BlogPostPage2.__proto__ || Object.getPrototypeOf(BlogPostPage2)).apply(this, arguments));
+        return _possibleConstructorReturn(this, (BlogPostPage.__proto__ || Object.getPrototypeOf(BlogPostPage)).apply(this, arguments));
     }
 
-    _createClass(BlogPostPage2, [{
+    _createClass(BlogPostPage, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             this.props.fetchBlogPost(this.props.match.params.id);
@@ -71026,7 +71026,7 @@ var BlogPostPage2 = function (_Component) {
         }
     }]);
 
-    return BlogPostPage2;
+    return BlogPostPage;
 }(_react.Component);
 
 // ------------------------------------------------------
@@ -71046,7 +71046,7 @@ exports.default = {
             getState = _ref2.getState;
         return dispatch((0, _actions.fetchBlogPost)(getState().id));
     },
-    component: (0, _reactRedux.connect)(mapStateToProps, { fetchBlogPost: _actions.fetchBlogPost })(BlogPostPage2)
+    component: (0, _reactRedux.connect)(mapStateToProps, { fetchBlogPost: _actions.fetchBlogPost })(BlogPostPage)
     // ------------------------------------------------------
 
 };

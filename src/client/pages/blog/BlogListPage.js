@@ -7,7 +7,7 @@ import { fetchBlogPosts } from '../../actions'
 import LinkBtn from '../../components/LinkBtn'
 // ------------------------------------------------------
 
-class BlogListPage2 extends Component {
+class BlogListPage extends Component {
     componentDidMount () {
         this.props.fetchBlogPosts()
     }
@@ -90,6 +90,6 @@ export default {
     loadData: ({ dispatch }) => dispatch(fetchBlogPosts()),
     component: connect(
         mapStateToProps, { fetchBlogPosts }
-    )(BlogListPage2)
+    )(BlogListPage)
 }
 // ------------------------------------------------------
