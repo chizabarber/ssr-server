@@ -61824,8 +61824,8 @@ var DashboardPage = function (_Component) {
         key: 'render',
         value: function render() {
             var auth = this.props.auth;
-            console.log(auth.googleId);
-            console.log(_keys2.default.adminID);
+            console.log('googleId: ' + auth.googleId);
+            console.log('adminId: ' + _keys2.default.adminID);
             if (auth.googleId === _keys2.default.adminID) {
                 return _react2.default.createElement(_AdminDash2.default, null);
             } else {
