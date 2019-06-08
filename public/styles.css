@@ -78,6 +78,11 @@ blockquote {
     display: block;
     margin: 30px auto 30px auto
 }
+.blog-image-large {
+    height: 500px;
+    display: block;
+    margin: 30px auto 30px auto
+}
 .card-image {
     height: 125px;
     margin-top: 10px;
