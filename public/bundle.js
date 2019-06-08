@@ -49917,8 +49917,8 @@ var BlogListPage = function (_Component) {
     }, {
         key: 'renderPosts',
         value: function renderPosts() {
-            var blog = this.props.blog;
-            return blog.reverse().map(function (_ref) {
+            var blog = this.props.blog.reverse();
+            return blog.map(function (_ref) {
                 var _id = _ref._id,
                     img = _ref.img,
                     title = _ref.title,
