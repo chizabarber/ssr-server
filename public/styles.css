@@ -79,7 +79,7 @@ blockquote {
     margin: 30px auto 30px auto
 }
 .blog-image-large {
-    height: 500px;
+    width: 60vw;
     display: block;
     margin: 30px auto 30px auto
 }

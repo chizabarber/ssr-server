@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Helmet } from 'react-helmet'
+import _ from 'lodash'
 // ------------------------------------------------------
 import { fetchBlogPosts } from '../../actions'
 import LinkBtn from '../../components/LinkBtn'
@@ -23,7 +24,7 @@ class BlogListPage extends Component {
         )
     }
     renderPosts () {
-        const blog = this.props.blog.reverse()
+        const blog = _.reverse(this.props.blog)
         return blog.map(({ _id, img, title, snippet, date }) => {
             return (
                 <div className='col s12 m6 l4' key={_id}>
