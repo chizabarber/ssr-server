@@ -49873,6 +49873,10 @@ var _lodash2 = _interopRequireDefault(_lodash);
 
 var _actions = __webpack_require__(103);
 
+var _PageTitle = __webpack_require__(905);
+
+var _PageTitle2 = _interopRequireDefault(_PageTitle);
+
 var _LinkBtn = __webpack_require__(595);
 
 var _LinkBtn2 = _interopRequireDefault(_LinkBtn);
@@ -49987,34 +49991,12 @@ var BlogListPage = function (_Component) {
                     style: { marginTop: '5%' }
                 },
                 this.head(),
-                _react2.default.createElement(
-                    'h3',
-                    {
-                        style: {
-                            color: '#367da2'
-                        }
-                    },
-                    _react2.default.createElement(
-                        'span',
-                        { style: { color: '#000' } },
-                        '|'
-                    ),
-                    _react2.default.createElement(
-                        'span',
-                        { style: { marginLeft: '10px' } },
-                        'com'
-                    ),
-                    _react2.default.createElement(
-                        'span',
-                        { style: { color: '#000', marginLeft: '10px' } },
-                        '\xB7'
-                    ),
-                    _react2.default.createElement(
-                        'span',
-                        { style: { marginLeft: '10px' } },
-                        'BLOG'
-                    )
-                ),
+                _react2.default.createElement(_PageTitle2.default, {
+                    blk1: '|',
+                    blu1: 'com',
+                    blk2: '\xB7',
+                    blu2: 'BLOG'
+                }),
                 _react2.default.createElement('hr', { className: 'h-rule' }),
                 _react2.default.createElement(
                     'div',
@@ -88199,6 +88181,66 @@ exports.default = BrandLogo;
 }.call(this));
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(44), __webpack_require__(175)(module)))
+
+/***/ }),
+/* 905 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ------------------------------------------------------
+
+var PageTitle = function PageTitle(_ref) {
+    var blk1 = _ref.blk1,
+        blu1 = _ref.blu1,
+        blk2 = _ref.blk2,
+        blu2 = _ref.blu2;
+
+    return _react2.default.createElement(
+        'h3',
+        {
+            style: {
+                color: '#367da2'
+            }
+        },
+        _react2.default.createElement(
+            'span',
+            { style: { color: '#000' } },
+            blk1
+        ),
+        _react2.default.createElement(
+            'span',
+            { style: { marginLeft: '10px' } },
+            blu1
+        ),
+        _react2.default.createElement(
+            'span',
+            { style: { color: '#000', marginLeft: '10px' } },
+            blk2
+        ),
+        _react2.default.createElement(
+            'span',
+            { style: { marginLeft: '10px' } },
+            blu2
+        )
+    );
+};
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+exports.default = PageTitle;
+// ------------------------------------------------------
 
 /***/ })
 /******/ ]);

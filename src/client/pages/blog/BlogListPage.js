@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import _ from 'lodash'
 // ------------------------------------------------------
 import { fetchBlogPosts } from '../../actions'
+import PageTitle from '../../components/PageTitle'
 import LinkBtn from '../../components/LinkBtn'
 // ------------------------------------------------------
 
@@ -66,24 +67,12 @@ class BlogListPage extends Component {
                 style={{ marginTop: '5%' }}
             >
                 {this.head()}
-                <h3
-                    style={{
-                        color: '#367da2'
-                    }}
-                >
-                    <span style={{ color: '#000' }}>
-                        |
-                    </span>
-                    <span style={{ marginLeft: '10px' }}>
-                        com
-                    </span>
-                    <span style={{ color: '#000', marginLeft: '10px' }}>
-                        ·
-                    </span>
-                    <span style={{ marginLeft: '10px' }}>
-                        BLOG
-                    </span>
-                </h3>
+                <PageTitle 
+                    blk1='|'
+                    blu1='com'
+                    blk2='·'
+                    blu2='BLOG'
+                />
                 <hr className='h-rule' />
                 <div className='row container'>
                     {this.renderPosts()}
