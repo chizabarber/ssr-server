@@ -5,8 +5,8 @@ import { Helmet } from 'react-helmet'
 import _ from 'lodash'
 // ------------------------------------------------------
 import { fetchBlogPosts } from '../../actions'
+import BlogCard from '../../components/BlogCard'
 import PageTitle from '../../components/PageTitle'
-import LinkBtn from '../../components/LinkBtn'
 // ------------------------------------------------------
 
 class BlogListPage extends Component {
@@ -29,33 +29,10 @@ class BlogListPage extends Component {
         return blog.map(({ _id, img, title, snippet, date }) => {
             return (
                 <div className='col s12 m6 l4' key={_id}>
-                    <div className='card'>
-                        <div className='card-content'>
-                            <div 
-                                className='right-align'
-                                style={{ color: '#367da2' }}
-                            >
-                                {date}
-                            </div>
-                            <span className='card-title'>
-                                {title}
-                            </span>
-                            <img 
-                                src={img} alt={title} 
-                                className='card-image'
-                            />
-                            <p className='left-align card-snippet'>
-                                {snippet}
-                            </p>
-                        </div>
-                        <div className='card-action left-align'>
-                            <LinkBtn 
-                                url={`/blog/${_id}`}
-                                text='Read More'
-                                className='center-button btn-flat'
-                            />
-                        </div>
-                    </div>
+                    <BlogCard 
+                        _id={_id} img={img} title={title}
+                        snippet={snippet} date={date}
+                    />
                 </div>
             )
         })

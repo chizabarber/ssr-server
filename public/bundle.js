@@ -49873,13 +49873,13 @@ var _lodash2 = _interopRequireDefault(_lodash);
 
 var _actions = __webpack_require__(103);
 
+var _BlogCard = __webpack_require__(906);
+
+var _BlogCard2 = _interopRequireDefault(_BlogCard);
+
 var _PageTitle = __webpack_require__(905);
 
 var _PageTitle2 = _interopRequireDefault(_PageTitle);
-
-var _LinkBtn = __webpack_require__(595);
-
-var _LinkBtn2 = _interopRequireDefault(_LinkBtn);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -49939,45 +49939,10 @@ var BlogListPage = function (_Component) {
                 return _react2.default.createElement(
                     'div',
                     { className: 'col s12 m6 l4', key: _id },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'card' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card-content' },
-                            _react2.default.createElement(
-                                'div',
-                                {
-                                    className: 'right-align',
-                                    style: { color: '#367da2' }
-                                },
-                                date
-                            ),
-                            _react2.default.createElement(
-                                'span',
-                                { className: 'card-title' },
-                                title
-                            ),
-                            _react2.default.createElement('img', {
-                                src: img, alt: title,
-                                className: 'card-image'
-                            }),
-                            _react2.default.createElement(
-                                'p',
-                                { className: 'left-align card-snippet' },
-                                snippet
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'card-action left-align' },
-                            _react2.default.createElement(_LinkBtn2.default, {
-                                url: '/blog/' + _id,
-                                text: 'Read More',
-                                className: 'center-button btn-flat'
-                            })
-                        )
-                    )
+                    _react2.default.createElement(_BlogCard2.default, {
+                        _id: _id, img: img, title: title,
+                        snippet: snippet, date: date
+                    })
                 );
             });
         }
@@ -88240,6 +88205,84 @@ var PageTitle = function PageTitle(_ref) {
 // ------------------------------------------------------
 // ------------------------------------------------------
 exports.default = PageTitle;
+// ------------------------------------------------------
+
+/***/ }),
+/* 906 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _LinkBtn = __webpack_require__(595);
+
+var _LinkBtn2 = _interopRequireDefault(_LinkBtn);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// ------------------------------------------------------
+
+// ------------------------------------------------------
+var BlogCard = function BlogCard(_ref) {
+    var _id = _ref._id,
+        img = _ref.img,
+        title = _ref.title,
+        snippet = _ref.snippet,
+        date = _ref.date;
+
+    return _react2.default.createElement(
+        'div',
+        { className: 'card' },
+        _react2.default.createElement(
+            'div',
+            { className: 'card-content' },
+            _react2.default.createElement(
+                'div',
+                {
+                    className: 'right-align',
+                    style: { color: '#367da2' }
+                },
+                date
+            ),
+            _react2.default.createElement(
+                'span',
+                { className: 'card-title' },
+                title
+            ),
+            _react2.default.createElement('img', {
+                src: img, alt: title,
+                className: 'card-image'
+            }),
+            _react2.default.createElement(
+                'p',
+                { className: 'left-align card-snippet' },
+                snippet
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'card-action left-align' },
+            _react2.default.createElement(_LinkBtn2.default, {
+                url: '/blog/' + _id,
+                text: 'Read More',
+                className: 'center-button btn-flat'
+            })
+        )
+    );
+};
+
+// ------------------------------------------------------
+
+// ------------------------------------------------------
+exports.default = BlogCard;
 // ------------------------------------------------------
 
 /***/ })
