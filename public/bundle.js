@@ -48659,10 +48659,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer() {
     return _react2.default.createElement(
         'div',
-        {
-            className: 'footer center-align',
-            style: { marginTop: 'auto' }
-        },
+        { className: 'footer center-align' },
         _react2.default.createElement(
             'p',
             null,
